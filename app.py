@@ -6,6 +6,7 @@ stylesheets = ["./assets/style/style.css"]
 # scripts = ["./assets/js/main.js"]
 # app = Dash(__name__, external_stylesheets=stylesheets, external_scripts=scripts)
 app = Dash(__name__, external_stylesheets=stylesheets)
+server = app.server
 
 # assume you have a "long-form" data frame
 # see https://plotly.com/python/px-arguments/ for more options
