@@ -27,16 +27,11 @@ app.layout = html.Div(children=[
     html.H2(children='Contem apenas estados que contem mata atlântica',
             id="Explicacao1"),
     html.H3(children='Municipios com indice de desmatamento menor que 0,1 km não foram computados', id="Explicacao2"),
-    html.Div(children='''
+    
+    html.Div(children=[html.Div(children='''
         Selecione o municipio desejado
-    '''),
-
-    html.Div(id="texto"),
-
-
-
-
-    dcc.Dropdown(opcoes, value='Todos Estados', id='select-Municipio'),
+         ''', id='select-Municipio-text'),
+        dcc.Dropdown(opcoes, value='Todos Estados', id='select-Municipio')],id='seletor'),
 
 
     dcc.Graph(

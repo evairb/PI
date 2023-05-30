@@ -30,6 +30,11 @@ h2,h3{
 
 }
 /* Home Screen */
+#seletor{
+  padding:50px;
+  width:500px;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -50,6 +55,7 @@ h2,h3{
   width: 100px;
   height: 100px;
 }
+
 
 .wrapper-title {
   display: flex;
